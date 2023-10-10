@@ -1,0 +1,31 @@
+/* Center the loading text both horizontally and vertically */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    /* You can adjust the height as needed */
+}
+
+/* Add a spinning animation to the text */
+.loading-text {
+
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    border-right: 2px solid black;
+    border-radius: 50%;
+    /* You can adjust the font size */
+    animation: spin 1s infinite linear;
+}
+
+/* Define the spinning animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
